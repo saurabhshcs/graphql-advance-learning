@@ -20,9 +20,10 @@ repositories {
 }
 
 dependencies {
-	implementation 'com.graphql-java-kickstart:graphql-spring-boot-starter:6.0.1'
-	implementation 'com.graphql-java-kickstart:graphiql-spring-boot-starter:6.0.1'
-	implementation 'io.leangen.graphql:spqr:0.10.1'
+	implementation group: 'com.graphql-java-kickstart', name: 'graphql-spring-boot-starter', version: '11.1.0'
+	implementation group: 'com.graphql-java-kickstart', name: 'graphiql-spring-boot-starter', version: '11.1.0'
+	implementation group: 'io.leangen.graphql', name: 'spqr', version: '0.11.2'
+
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
