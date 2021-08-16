@@ -7,24 +7,23 @@ package com.techsharezone.graphql.query;
  */
 
 import com.techsharezone.graphql.schema.StudentSchema;
+import graphql.kickstart.tools.GraphQLQueryResolver;
 import io.leangen.graphql.annotations.GraphQLQuery;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import java.util.concurrent.CompletableFuture;
+import java.math.BigDecimal;
 
 @Component
 @Slf4j
 @RequiredArgsConstructor
-public class StudentQuery{
+public class StudentQuery implements GraphQLQueryResolver {
 
     @GraphQLQuery(name = "StudentQuery")
-    public CompletableFuture<StudentSchema> getStudent() {
+    public StudentSchema getStudent() {
 
-        StudentSchema studentSchema;
-
-        return null;
+        return StudentSchema.builder().name("Saurabh").age(36).salary(BigDecimal.TEN).build();
     }
 
 }

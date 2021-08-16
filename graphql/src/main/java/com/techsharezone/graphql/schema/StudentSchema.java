@@ -6,5 +6,14 @@ package com.techsharezone.graphql.schema;
  * @author
  */
 
+import lombok.Builder;
+
+import java.math.BigDecimal;
+
+@Builder
 public class StudentSchema {
+
+    private String name;
+    private Integer age;
+    private BigDecimal salary;
 }
