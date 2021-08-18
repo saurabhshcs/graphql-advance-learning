@@ -25,5 +25,4 @@ public class StudentQuery implements GraphQLQueryResolver {
 
         return StudentSchema.builder().name("Saurabh").age(36).salary(BigDecimal.TEN).build();
     }
-
 }
