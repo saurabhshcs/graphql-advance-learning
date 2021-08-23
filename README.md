@@ -9,7 +9,7 @@ This is advance level learning of GraphQL API using spring boot &amp; facebook d
 At its simplest, GraphQL is about asking for specific fields on objects. Let's start by looking at a very simple query and the result we get when we run it:
 
 ```
-{
+qurey {
   hero {
     name
   }
