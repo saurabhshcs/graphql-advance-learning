@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Getter
 @Setter
@@ -33,15 +32,5 @@ public class Student {
 
     @Column(name = "email")
     private String email;
-
-    @OneToOne
-    @JoinColumn(name = "address_id")
-    private Address address;
-
-    @OneToMany(mappedBy = "student", fetch = FetchType.EAGER)
-    private List<Subject> subjects;
-
-
-
 
 }
