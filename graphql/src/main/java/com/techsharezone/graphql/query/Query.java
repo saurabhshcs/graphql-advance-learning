@@ -28,7 +28,7 @@ public class Query {
     }
 
     @GraphQLQuery(name = "fullName")
-    public Stri ng fullName(SampleRequest sampleRequest){
+    public String fullName(SampleRequest sampleRequest){
         return sampleRequest.getFirstName() +  " - " + sampleRequest.getLastName();
     }
 
