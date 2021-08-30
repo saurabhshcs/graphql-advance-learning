@@ -8,10 +8,42 @@ This is advance level learning of GraphQL API using spring boot &amp; facebook d
 > Fields
 At its simplest, GraphQL is about asking for specific fields on objects. Let's start by looking at a very simple query and the result we get when we run it:
 
+### GraphQL Request Payload
+```.grqphql
+query{
+  student(firstName: "Singh"){
+    city
+    firstName
+    lastName
+    email
+    street
+    learningSubjects {
+      subjectName
+    }
+  }
+}
+
 ```
-qurey {
-  hero {
-    name
+
+### GraphQL JSON Response
+```.json
+{
+  "data": {
+    "student": {
+      "city": "any street",
+      "firstName": "Singh",
+      "lastName": "Donga",
+      "email": "Sachin@ponda.com",
+      "street": null,
+      "learningSubjects": [
+        {
+          "subjectName": "Java"
+        },
+        {
+          "subjectName": "MongoDB"
+        }
+      ]
+    }
   }
 }
 ```
