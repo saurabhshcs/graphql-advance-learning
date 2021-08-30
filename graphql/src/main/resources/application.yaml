@@ -1,0 +1,12 @@
+server:
+    port: 9002
+
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: secret
+  jpa:
+    hibernate:
+      ddl-auto: update
