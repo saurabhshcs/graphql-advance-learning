@@ -1,0 +1,20 @@
+type Query {
+    firstQuery : String
+    secondQuery : String
+    student(firstName: String) : StudentResponse
+
+}
+
+
+input SampleRequest{
+    firstName: String
+    lastName: String
+}
+
+type StudentResponse{
+    firstName : String
+    lastName : String
+    email : String
+    street : String
+    city : String
+}
