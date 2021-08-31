@@ -1,4 +1,4 @@
-package com.techsharezone.graphql.entity;
+package com.techsharezone.graphqlmutation.entity;
 
 /*
  * @created 23/08/2021 -02:13

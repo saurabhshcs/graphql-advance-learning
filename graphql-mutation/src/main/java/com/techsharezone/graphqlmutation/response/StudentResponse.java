@@ -1,4 +1,4 @@
-package com.techsharezone.graphql.response;
+package com.techsharezone.graphqlmutation.response;
 
 /*
  * @created 23/08/2021 -11:32
@@ -6,7 +6,7 @@ package com.techsharezone.graphql.response;
  * @author  saurabhshcs
  */
 
-import com.techsharezone.graphql.entity.Student;
+import com.techsharezone.graphqlmutation.entity.Student;
 import lombok.Getter;
 import lombok.Setter;
 

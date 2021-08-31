@@ -1,4 +1,4 @@
-package com.techsharezone.graphql.entity;
+package com.techsharezone.graphqlmutation.entity;
 
 /*
  * @created 18/08/2021 -00:01
@@ -6,6 +6,7 @@ package com.techsharezone.graphql.entity;
  * @author  saurabhshcs
  */
 
+import com.techsharezone.graphqlmutation.requst.CreateStudentRequest;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -22,16 +23,16 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column
     private Long id;
 
-    @Column(name = "first_name")
+    @Column
     private String firstName;
 
-    @Column(name = "last_name")
+    @Column
     private String lastName;
 
-    @Column(name = "email")
+    @Column
     private String email;
 
     @OneToOne
@@ -40,4 +41,10 @@ public class Student {
 
     @OneToMany(mappedBy = "student", fetch = FetchType.EAGER)
     private List<Subject> learningSubjects;
+
+    public Student(CreateStudentRequest createStudentRequest) {
+        this.firstName = createStudentRequest.getFirstName();
+        this.lastName = createStudentRequest.getLastName();
+        this.email = createStudentRequest.getEmail();
+    }
 }

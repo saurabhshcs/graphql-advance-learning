@@ -1,4 +1,4 @@
-package com.techsharezone.graphql.entity;/*
+package com.techsharezone.graphqlmutation.entity;/*
  * @created 23/08/2021 -11:03
  * @project graphql
  * @author  saurabhshcs
@@ -17,15 +17,16 @@ import javax.persistence.*;
 @Entity
 @Table
 public class Subject {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "subject_name")
+    @Column
     private String subjectName;
 
-    @Column(name = "marks_obtained")
+    @Column
     private Double marksObtained;
 
     @ManyToOne

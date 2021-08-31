@@ -1,4 +1,4 @@
-package com.techsharezone.graphql.requst;
+package com.techsharezone.graphqlmutation.requst;
 
 /*
  * @created 24/08/2021 -12:27

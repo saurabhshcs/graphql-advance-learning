@@ -1,4 +1,4 @@
-package com.techsharezone.graphql.repository;
+package com.techsharezone.graphqlmutation.repository;
 
 /*
  * @created 23/08/2021 -10:59
@@ -6,7 +6,7 @@ package com.techsharezone.graphql.repository;
  * @author  saurabhshcs
  */
 
-import com.techsharezone.graphql.entity.Student;
+import com.techsharezone.graphqlmutation.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
